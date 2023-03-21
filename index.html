@@ -56,6 +56,14 @@
 			</div>
 
 		<!-- Main -->
+		<!-- JavaScript function to display enlarged image -->
+			<script>
+			  function enlargeImg(img) {
+			    var enlargedImg = document.getElementById("enlarged-img");
+			    enlargedImg.style.display = "block";
+			    enlargedImg.innerHTML = "<img src='" + img.src + "' />";
+			  }
+			</script>
 			<div id="main">
 
 				<!-- Intro -->
@@ -100,7 +108,7 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/casemiro DB.png" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/casemiro DB.png" alt="" onclick="enlargeImg(this)"/></a>
 										<header>
 											<h3>Midfielder Dashboard</h3>
 										</header>
